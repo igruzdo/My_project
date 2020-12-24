@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.conteiner {
+width: 1600px;
+height: 100%;
+margin: auto;
+}
+body {
+    font-family: 'lato', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/*navigation*/
+
+.navbar_conteiner {
+    margin-left: 231px;
+    margin-right: 239px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar {
+ width: 100%;
+ height: 75px;
+ background: #222222;   
+}
+.navbar_conteiner_left {
+    display: flex;
+    margin: 0;
+    height: 75px;
+    justify-content:flex-start;
+    align-items: center;
+}
+.icon-2 {
+    padding-left: 42px;
+}
+.navbar_conteiner_right {
+    display: flex;
+    margin: 0;
+    height: 75px;
+    justify-content:flex-end;
+    align-items: center;
+}
+.icon-4 {
+    padding: 0 34px;
+}
+
+/*main_look*/
+
+.main_look {
+    background: #F1E4E6;
+    width: 100%;
+    height: 764px;
+    display: flex;
+    align-items: center;
+}
+.text--pink {
+    color: #F16D7F;
+}
+.main_look_text{
+    position: relative;
+    margin-left: 92px;
+}
+.main_look_text::before {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    left: -28px;
+    height: 100%;
+    background: #F16D7F;
+}
+.brand_text {
+    font-weight: 700;
+    font-size:48px;
+    line-height: 57px;
+}
+.subtitle_text {
+    font-weight: 700;
+    font-size:32px;
+    line-height: 44px;
+}
+/*for_people*/
+ .for_people {
+     margin-left: 14%;
+     margin-right: 14%;
+     height: 100%;
+     margin-top: 64px;
+}
+ .for_people_blok {
+     width: 360px;
+     height: 260px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+ .fpb-1 {
+     background-image:url(img/for_women.jpg);
+}
+ .fpb-2 {
+    background-image:url(img/for_men.jpg);
+}
+.fpb-3 {
+    background-image:url(img/for_kids.jpg);
+}
+.fbp-4 {
+    background-image:url(img/accesories.jpg);
+}
+
+.for_people_blok_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+.fpb_line_1 {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    line-height: 19px;
+}
+.fpb_line_2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 1%;
+}
+.accesoaries {
+    margin-top: 30px;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fetured*/
+.fetured {
+    margin: 0 230px;
+
+}
+.fet-items {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-top: 97px;
+    text-align: center;
+}
+.fet-items_small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    text-align: center;
+    margin-top: 6px;
+}
+.fetured_block {
+    width: 360px;
+    height: 580px;
+    margin-top: 30px;
+    background-color: #F8F8F8;
+}
+.fetured_block_line {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.fetured_text-1 {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+.fetured_text-2 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-left: 16px;
+    margin-top: 13px;
+}
+.fetured_text-3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-left: 16px;
+    margin-top: 18px;
+}
+.main_button {
+    padding: 14px 37px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: white; 
+    border: 1px solid #FF6A6A;
+    color: #F26376;
+}
+.button_center {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+/*black_block*/
+.black {
+    width: 100%;
+    height: 341px;
+    background-color: #222224;
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-around;
+}
+.black_text-1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+}
+.black_text-2 {
+    font-weight: 300;
+    font-size: 14x;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(251, 251, 251, 1);
+}
+.black_block {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-self: center;
+}
+.black_img {
+    align-self: center;
+}
+/*subscribe*/
+.subscribe {
+    height: 448px;
+    width: 100%;
+    background-image: url(img/photo\ subscribe.jpg);
+    display: flex;
+    justify-content: space-between;
+}
+.lady {
+    height: 100%;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 230px;
+}
+.lady_img {
+    align-self: center;
+    margin-bottom: 30px;
+}
+.lady_text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;    
+}
+.subforme {
+    margin-right: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.subforme_text_1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;    
+}
+.subforme_text_2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center; 
+    color: #222224;   
+}
+.e-mail_inp {
+    width: 256px;
+    height: 49px;
+    padding-left: 22px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: #E1E1E1;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 32px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.sub {
+    width: 120px;
+    height: 49px;
+    margin-left: ;
+    background: #F16D7F;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+/*footer*/
+.footer {
+    height: 79px;
+    width: 100%;
+    background: #222224;
+}
+.footer_content {
+    height: 100%;
+    margin-left: 235px;
+    margin-right: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.s_box {
+    background: #FFFFFF;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bak_pink {
+    background: #F16D7F;
+}
+.s_box_img {
+    align-self: center;
+}
+.social_box {
+    height: 100%;
+    width: 163px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_text {
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 79px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+
+
