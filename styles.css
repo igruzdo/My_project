@@ -4,7 +4,9 @@
 }
 
 .conteiner {
-    width: 1600px;
+    /*width: 1600px;*/ /*Не фиксируем ширину, на устройствах меньше это всё уезжает вправо*/
+    width: 100%;
+    max-width: 1600px; /*На больших экранах ничего не изменится, зато на маленьких станет лучше*/
     height: 100%;
     margin: auto;
 }
@@ -19,7 +21,7 @@ a {
 
 .flex {
     display: flex;
-    align-items: center;
+    align-items: center; /*Лучше так не делать. Теряется суть атомарности. Есть же случаи, когда не надо делать align-items: center*/
 }
 
 /*navigation*/
@@ -66,6 +68,10 @@ a {
     height: 764px;
 }
 
+.bigman {
+    max-width: 60%; /*Чтоб при сжатии он не забирал всё пространство по ширине*/
+}
+
 .text--pink {
     color: #F16D7F;
 }
@@ -109,6 +115,7 @@ a {
     height: 260px;
     flex-direction: column;
     justify-content: center;
+    background-position: center; /*Чтоб при сжатии был не левый край фотографий, а центр*/
 }
 
 .fpb-1 {
@@ -152,6 +159,7 @@ a {
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    background-position: center; /*Аналогично*/
 }
 
 /*fetured*/
@@ -336,6 +344,10 @@ a {
     color: #222224;
 }
 
+.email_form {
+    margin-top: 32px; /*Так будет оступ и у кнопки и у текстового поля*/
+}
+
 .e-mail_inp {
     width: 256px;
     height: 49px;
@@ -345,7 +357,7 @@ a {
     background: #E1E1E1;
     font-size: 14px;
     line-height: 17px;
-    margin-top: 32px;
+    /*margin-top: 32px;*/
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -354,7 +366,7 @@ a {
 .sub {
     width: 120px;
     height: 49px;
-    margin-left: ;
+    /*margin-left: ;*//*Кажется, тут должно был обыть значение*/
     background: #F16D7F;
     border: none;
     border-top-right-radius: 25px;
@@ -397,7 +409,8 @@ a {
 .social_box {
     height: 100%;
     width: 163px;
-    margin-top: 24px;
+    /* margin-top: 24px;*/
+    align-items: center; /*Вот так тоже отцентрируется и без белой полоски снизу*/
     display: flex;
     justify-content: space-around;
 }
