@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Главная страница</title>
 </head>
 <body>
     <div class="conteiner">
-        <nav class="navbar">
+        <nav class="navbar_ndx">
             <div class="navbar_conteiner">
-                <div class="navbar_conteiner_left flex">
+                <div class="navbar_conteiner_left d-flex align-items-center">
                     <div class="icon-1">
                         <a href="#"><img src="img/Lable.png" alt="lable"></a>
                     </div>
@@ -20,7 +22,7 @@
                         <a href="#"><img src="img/serch.png" alt="serch"></a>
                     </div>
                 </div>
-                <div class="navbar_conteiner_right flex">
+                <div class="navbar_conteiner_right d-flex align-items-center">
                     <div class="icon-3">
                         <a href="#"><img src="img/menu.png" alt="menu"></a>
                     </div>
@@ -33,148 +35,148 @@
                 </div>
             </div>
         </nav>
-        <div class="main_look flex">
-            <img class="bigman" src="img/Big_man.jpg" alt="man">
-            <div class="main_look_text">
+        <div class="row gx-0 d-flex align-items-center main_look">
+            <div class="col"><img class="bigman" src="img/Big_man.jpg" alt="man"></div>
+            <div class="col main_look_text">
                 <p class="brand_text">THE BRAND</p>
                 <p class="subtitle_text">OF LUXERIOUS <span class="text--pink">FASHION</span></p>
             </div>
         </div>
         <div class="for_people">
-            <div class="for_people_blok_conteiner">
-                <div class="for_people_blok flex fpb-1">
+            <div class="d-flex justify-content-between">
+                <div class="col align-items-center d-flex flex-column justify-content-center for_people_blok fpb-1">
                     <p class="fpb_line_1">30% OFF</p>
                     <p class="fpb_line_2"><a href="#"> <span class="text--pink">FOR WOMEN</span></a></p>
                 </div>
-                <div class="for_people_blok flex fpb-2">
+                <div class="col align-items-center ms-4 me-4 flex-column justify-content-center for_people_blok d-flex fpb-2">
                     <p class="fpb_line_1">HOT DEAL</p>
                     <p class="fpb_line_2"><a href="#"><span class="text--pink">FOR MEN</span></a></p>
                 </div>
-                <div class="for_people_blok flex fpb-3">
+                <div class="col align-items-center d-flex flex-column justify-content-center for_people_blok fpb-3">
                     <p class="fpb_line_1">NEW ARRIVALS</p>
                     <p class="fpb_line_2"><a href="#"><span class="text--pink">FOR KIDS</span></a></p>
                 </div>
             </div>
-            <div class="accesoaries flex fbp-4">
+            <div class="align-items-center d-flex flex-column justify-content-center mt-4 accesoaries fbp-4">
                     <p class="fpb_line_1">LUXIROUS & TRENDY</p>
                     <p class="fpb_line_2"><a href="#"> <span class="text--pink">ACCESORIES</span></a></p>
             </div>
         </div>
         <div class="fetured">
-            <p class="fet-items">Fetured Items</p>
-            <p class="fet-items_small">Shop for items based on what we featured in this week</p>
-            <div class="fetured_block_line">
-                <div class="fetured_block">
+            <p class="fet-items text-center">Fetured Items</p>
+            <p class="fet-items_small text-center">Shop for items based on what we featured in this week</p>
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_1.jpg" alt="img-1" class="fetured_img-1">
+                    <img src="img/fetured_1.jpg" alt="img-1" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
-                <div class="fetured_block">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_2.jpg" alt="img-2" class="fetured_img-2">
+                    <img src="img/fetured_2.jpg" alt="img-2" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
-                <div class="fetured_block">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_3.jpg" alt="img-3" class="fetured_img-3">
+                    <img src="img/fetured_3.jpg" alt="img-3" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
-                <div class="fetured_block">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_4.jpg" alt="img-4" class="fetured_img-4">
+                    <img src="img/fetured_4.jpg" alt="img-4" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
-                <div class="fetured_block">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_5.jpg" alt="img-5" class="fetured_img-5">
+                    <img src="img/fetured_5.jpg" alt="img-5" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
-                <div class="fetured_block">
+                <div class="position-relative fetured_block">
                     <div class="fetured_blok_hover">
-                        <button class="hover_button"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
+                        <button class="hover_button d-flex justify-content-center align-items-center text-center"><img class="cart_small" src="img/cart_small.png" alt="">Add to Cart</button>
                     </div>
-                    <img src="img/fetured_6.jpg" alt="img-6" class="fetured_img-6">
+                    <img src="img/fetured_6.jpg" alt="img-6" class="fetured_img">
                     <p class="fetured_text-1">ELLERY X M'O CAPSULE</p>
                     <p class="fetured_text-2">Known for her sculptural takes on&nbsp;traditional<br> tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams<br>up&nbsp;with Moda Operandi.</p>
                     <p class="fetured_text-3">$52.00</p>
                 </div>
             </div>
         </div>
-        <div class="button_center"><button class="main_button">Browse All Product</button></div>
-        <div class="black">
-            <div class="black_block flex">
-                <img src="img/black_img_1.png" alt="black_img" class="black_img">
-                <p class="black_text-1">Free Delivery</p>
-                <p class="black_text-2">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+        <div class="d-flex justify-content-center mt-5"><button class="main_button text-center">Browse All Product</button></div>
+        <div class="black d-flex justify-content-between">
+            <div class="black_block d-flex align-items-center flex-column justify-content-around align-self-center">
+                <img src="img/black_img_1.png" alt="black_img" class="black_img align-self-center">
+                <p class="black_text-1 text-center">Free Delivery</p>
+                <p class="black_text-2 text-center">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
             </div>
-            <div class="black_block flex">
-                <img src="img/black_img_2.png" alt="black_img" class="black_img">
-                <p class="black_text-1">Sales & discounts</p>
-                <p class="black_text-2">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+            <div class="black_block d-flex align-items-center flex-column justify-content-around align-self-center">
+                <img src="img/black_img_2.png" alt="black_img" class="black_img align-self-center">
+                <p class="black_text-1 text-center">Sales & discounts</p>
+                <p class="black_text-2 text-center">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
             </div>
-            <div class="black_block flex">
-                <img src="img/black_img_3.png" alt="black_img" class="black_img">
-                <p class="black_text-1">Quality assurance</p>
-                <p class="black_text-2">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+            <div class="black_block d-flex align-items-center flex-column justify-content-around align-self-center">
+                <img src="img/black_img_3.png" alt="black_img" class="black_img align-self-center">
+                <p class="black_text-1 text-center">Quality assurance</p>
+                <p class="black_text-2 text-center">Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
             </div>
         </div>
-        <div class="subscribe">
-            <div class="lady flex">
-                <img src="img/circle_lady.png" alt="lady" class="lady_img">
-                <p class="lady_text">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, <i>a pulvinar purus<br>condimentum“</i></p>
+        <div class="subscribe d-flex justify-content-between">
+            <div class="lady d-flex align-items-center flex-column justify-content-center text-center">
+                <img src="img/circle_lady.png" alt="lady" class="lady_img align-self-center">
+                <p class="lady_text text-center">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, <i>a pulvinar purus<br>condimentum“</i></p>
             </div>
-            <div class="subforme flex">
-                <p class="subforme_text_1">SUBSCRIBE</p>
-                <p class="subforme_text_2">FOR OUR NEWLETTER AND PROMOTION</p>
-                <div class="email_form flex"> <!--Добавил класс-->
+            <div class="subforme d-flex align-items-center flex-column justify-content-center text-center">
+                <p class="subforme_text_1 text-center">SUBSCRIBE</p>
+                <p class="subforme_text_2 text-center">FOR OUR NEWLETTER AND PROMOTION</p>
+                <div class="email_form d-flex align-items-center">
                     <input type="email" name="" id="" placeholder="Enter Your Email" class="e-mail_inp"><button class="sub">Subscribe</button>             
                 </div>
             </div>
         </div>
         <footer class="footer">
-            <div class="footer_content flex">
-                <div class="footer_text">
+            <div class="footer_content d-flex align-items-center justify-content-between">
+                <div class="footer_text text-center">
                     <p>© 2021 Brand All Rights Reserved.</p>
                 </div>
-                <div class="social_box">
+                <div class="social_box d-flex justify-content-around align-items-center">
                     <a href="#">
-                        <div class="s_box flex">
-                             <img src="img/facebook.png" alt="facebook" class="s_box_img">
+                        <div class="s_box d-flex align-items-center justify-content-center">
+                             <img src="img/facebook.png" alt="facebook" class="s_box_img align-self-center">
                         </div>
                     </a>
                     <a href="#">
-                        <div class="s_box flex bak_pink">
-                            <img src="img/instagram.png" alt="inst"class="s_box_img">
+                        <div class="s_box bak_pink d-flex align-items-center justify-content-center">
+                            <img src="img/instagram.png" alt="inst"class="s_box_img align-self-center">
                         </div>
                     </a>
                     <a href="#">
-                        <div class="s_box flex">
-                            <img src="img/p.png" alt="p"class="s_box_img">
+                        <div class="s_box d-flex align-items-center justify-content-center">
+                            <img src="img/p.png" alt="p"class="s_box_img align-self-center">
                         </div>
                     </a>
                     <a href="#">
-                        <div class="s_box flex">
-                            <img src="img/twiter.png" alt="twiter"class="s_box_img">
+                        <div class="s_box d-flex align-items-center justify-content-center">
+                            <img src="img/twiter.png" alt="twiter"class="s_box_img align-self-center">
                         </div>
                     </a>
                 </div>
