@@ -29,6 +29,7 @@ a {
 .navbar_conteiner {
     margin-left: 231px;
     margin-right: 239px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -615,4 +616,202 @@ a {
 }
 .prod_filter_center {
     margin-top: 65px;
+}
+
+/*cart*/
+
+.shop_cart_conteiner{
+    margin-top: 96px;
+    margin-bottom: 129px;
+}
+.shop_cart_left{
+    width: 652px;
+}
+.price_prod, .prod_color, .prod_size, .prod_quantity {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    margin-top: 6px;
+}
+.quantity_count {
+    margin-left: 40px;
+    border: 1px solid #EAEAEA;
+    padding: 1px 17px 2px 17px;
+}
+.prod_weather {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+.close_all {
+    align-self: center;
+}
+.first_prod {
+   height: 306px;
+   transition: 600ms;
+   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+.shop_cart_left_text {
+    margin-left: 32px;
+}
+.prod_title {
+    justify-content: space-between;
+    width: 335px;
+    margin-top: 32px;
+}
+.second_prod {
+    height: 306px;
+    transition: 600ms;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    margin-top: 40px;
+}
+.shop_cart_buttons {
+    margin-top: 73px;
+    justify-content: space-between;
+}
+.clear_cart {
+    width: 234px;
+    height: 49px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #A4A4A4;
+    background-color: white;
+    outline: none;
+}
+.clear_cart:active {
+    outline: none;
+}
+.continue_shop {
+    width: 224px;
+    height: 49px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #A4A4A4;
+    background-color: white;
+    outline: none;
+}
+
+.inp_city, .inp_state, .inp_poste {
+    margin-top: 20px;
+}
+.inp_poste {
+    margin-bottom: 24px;
+}
+.shop_cart_right {
+    margin-left: 130px;
+}
+.inp_city > input {
+    width: 360px;
+    height: 44px;
+}
+.inp_state > input {
+    width: 360px;
+    height: 44px;
+}
+.inp_poste > input {
+    width: 360px;
+    height: 44px;
+}
+.inp_city > input::placeholder {
+    width: 360px;
+    height: 44px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 17px;
+}
+.inp_state > input::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    padding-left: 17px;
+}
+.inp_poste > input::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    padding-left: 17px;
+}
+.get_a_q_button {
+    width: 100px;
+    height: 34px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    border: 1px solid #A4A4A4;
+    background-color: white;
+    outline: none;
+    color: #4A4A4A;
+}
+.total_cost {
+    height: 214px;
+    width: 100%;
+    margin-top: 70px;
+    background-color: #F5F3F3;
+    padding-top: 39px;
+    text-align: center;
+    
+}
+.checkout_button {
+    width: 273px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background-color:#FF6A6A;
+    border: 1px solid #FF6A6A;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.sub_total {
+    text-align: end;
+    padding-right: 34px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.sub_total > span {
+    margin-left: 20px;
+}
+.grand_total {
+    font-style: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-align: end;
+    padding-right: 37px;
+}
+.grand_total > span {
+    margin-left: 20px;
+    font-weight: 700;
+}
+.total_cost_hr {
+    margin: 21px 42px 17px 42px;  
+}
+.checkout_button:hover {
+    color: #F26376;
+    background-color: white;
+    transform: scale(1.2,1.2) rotate(720deg) translate(0px, -1px);
+    transition: 600ms;
+}
+.first_prod:hover {
+    transform: scale(1.2,1.2) translate(-1px, -1px);
+    transition: 600ms;
+}
+.second_prod:hover {
+    transform: scale(1.2,1.2) translate(-1px, -1px);
+    transition: 600ms;
 }
