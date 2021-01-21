@@ -27,9 +27,12 @@ a {
 /*navigation*/
 
 .navbar_conteiner {
-    margin-left: 231px;
-    margin-right: 239px;
+    /*margin-left: 231px; /*Большие отступы, при сжатии страницы они не дают адаптивно сжаться и всё ползёт*/
+    /*margin-right: 239px;*/
+    padding: 0 9px 0 1px;
+    max-width: 1140px; /*Контейнер ограничивает по ширине за счёт соего max-width, а не за счёт margin*/
     width: 100%;
+    margin: 0 auto; /*Центрируем*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -255,7 +258,7 @@ a {
     margin-top: 48px;
 }
 
-/*black_block*/
+/*black_block*/ы
 .black {
     width: 100%;
     height: 341px;
@@ -799,7 +802,8 @@ a {
     font-weight: 700;
 }
 .total_cost_hr {
-    margin: 21px 42px 17px 42px;  
+    /*margin: 21px 42px 17px 42px;  */
+    margin: 21px 42px 17px; /* Если 3 значения то 1е-верх 2е-стороны 3е-низ */
 }
 .checkout_button:hover {
     color: #F26376;
@@ -808,10 +812,10 @@ a {
     transition: 600ms;
 }
 .first_prod:hover {
-    transform: scale(1.2,1.2) translate(-1px, -1px);
+    transform: scale(1.2,1.2) translate(-1px, -1px); /*1.2 неестественно много получается, но это вкусовщина*/
     transition: 600ms;
-}
+} /*Если правила общие, селекторы можно писать через запятую*/
 .second_prod:hover {
-    transform: scale(1.2,1.2) translate(-1px, -1px);
+    transform: scale(1.2,1.2) translate(-1px, -1px); /*если scale по x и y совпадает, то можно писать одно число scale(1.2)*/
     transition: 600ms;
 }
