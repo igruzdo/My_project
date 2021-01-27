@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Корзина</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
@@ -37,60 +37,37 @@
             </div>
         </nav>
         <nav class="nw_ar">
-            <span class="nw_ar_txt">SHOPPING CART</span>
+            <span class="nw_ar_txt">REGISTRATION</span>
         </nav>
-       <div class="shop_cart_conteiner d-flex">
-           <div class="shop_cart_left">
-               <div class="first_prod d-flex">
-                   <img src="img_cart/Rectangle 15 copy.jpg" alt="first_prod" class="shop_cart_img">
-                   <div class="shop_cart_left_text">
-                       <div class="prod_title d-flex ">
-                            <div class="prod_title_text">
-                                <h3 class="prod_weather">MANGO PEOPLE <br> T-SHIRT</h3>
-                            </div>
-                            <div><img src="img_cart/Vector.png" alt="" class="close_all"></div>
-                       </div>
-                       <p class="price_prod">Price: <span class="text--pink">$300</span></p>
-                       <p class="prod_color">Color: Red</p>
-                       <p class="prod_size">Size: Xl</p>
-                       <p class="prod_quantity">Quantity: <span class="quantity_count">2</span></p>
-                   </div>
-               </div>
-               <div class="second_prod d-flex">
-                <img src="img_cart/Rectangle 15 copy (1).jpg" alt="first_prod" class="shop_cart_img">
-                <div class="shop_cart_left_text">
-                    <div class="prod_title d-flex ">
-                        <div class="prod_title_text">
-                            <h3 class="prod_weather">MANGO PEOPLE <br> T-SHIRT</h3>
-                        </div>
-                        <div><img src="img_cart/Vector.png" alt="" class="close_all"></div>
-                   </div>
-                   <p class="price_prod">Price: <span class="text--pink">$300</span></p>
-                   <p class="prod_color">Color: Red</p>
-                   <p class="prod_size">Size: Xl</p>
-                   <p class="prod_quantity">Quantity: <span class="quantity_count">2</span></p>
-                </div>
-               </div>
-               <div class="shop_cart_buttons d-flex">
-                   <button class="clear_cart">CLEAR SHOPPING CART</button>
-                   <button class="continue_shop">CONTINUE SHOPPING</button>
-               </div>
-           </div>
-           <div class="shop_cart_right">
-               <fieldset class="shop_cart_form">
-                   <p class="s_adress">SHIPPING ADRESS</p>
-                   <div class="inp_city"><input type="text" placeholder="Bangladesh"></div>
-                   <div class="inp_state"><input type="text"placeholder="State"></div>
-                   <div class="inp_poste"><input type="text"placeholder="Postcode / Zip"></div>
-                   <button class="get_a_q_button">GET A QUOTE</button>
+       <div class="reg_conteiner d-flex">
+           <div class="reg_form_input">
+               <fieldset class="reg_form">
+                   <p class="reg_form_h">Your Name</p>
+                   <div class="inp_reg_form"><input type="text" placeholder="First Name"></div>
+                   <div class="inp_reg_form"><input type="text" placeholder="Last Name"></div>
+                   <div class="inp_radio_sex d-flex">
+                       <p class="sex d-flex"><input type="radio" name="sex" value="male"> Male</p>
+                       <p class="sex d-flex"><input type="radio" name="sex" value="female">Female</p>
+                    </div>
+                    <p class="reg_form_h">Login details</p>
+                    <div class="inp_reg_form"><input type="email" placeholder="Email"></div>
+                    <div class="inp_reg_form"><input type="password" placeholder="Password"></div>
+                    <p class="password_rules">Please use 8 or&nbsp;more characters, with at&nbsp;least 1 number and a&nbsp;mixture of&nbsp;uppercase and lowercase letters</p>
+                    <button class="reg_form_button">JOIN NOW <img class="arrow_button" src="img/Group.png" alt="arrow"></button>
                </fieldset>
-               <div class="total_cost">
-                   <p class="sub_total">SUB TOTAL <span class="sm_price">$900</span></p>
-                   <p class="grand_total">GRAND TOTAL <span class="big_price text--pink">$900</span></p>
-                   <hr class="total_cost_hr">
-                   <button class="checkout_button">PROCEED TO CHECKOUT</button>
-               </div>
            </div>
+           <div class="reg_txt">
+               <h4 class="reg_txt_h4">LOYALTY HAS ITS PERKS</h4>
+               <p class="reg_txt_p">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+               <ul class="condition_list">
+                   <li class="condition">15% off welcome offer</li>
+                   <li class="condition">Free shipping, returns and exchanges on all orders</li>
+                   <li class="condition">$10 off a purchase on your birthday</li>
+                   <li class="condition">Early access to products</li>
+                   <li class="condition">Exclusive offers & rewards</li>
+               </ul>
+           </div>
+
        </div>
        <div class="sub_conteiner">
         <div class="subscribe">
